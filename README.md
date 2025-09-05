@@ -1,1 +1,1 @@
-exercicio para treinar a conexão com o php
+exercício para treinar a conexão com o php
