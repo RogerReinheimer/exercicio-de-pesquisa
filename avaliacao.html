@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Avaliar Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f7f9;
+            margin: 0;
+        }
+        .centralizar {
+            max-width: 520px;
+            margin: 8vh auto;
+            background: #fff;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+        }
+        h1 {
+            font-size: 1.25rem;
+            margin: 0 0 16px;
+        }
+        label {
+            display: block;
+            margin: 12px 0 6px;
+            font-weight: 600;
+        }
+        select {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid #d7dce1;
+            font-size: 1rem;
+        }
+        button {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid #d7dce1;
+            font-size: 1rem;
+            margin-top: 16px;
+            background: #2563eb;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centralizar">
+        <h1>Deixe sua avaliação</h1>
+
+        <form action="processa.php" method="POST">
+            <label for="nota">Nota (1 a 5):</label>
+            <select name="nota" id="nota" required>
+                <option value="" disabled selected>Escolha sua nota</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+    </div>
+</body>
+
+</html>
